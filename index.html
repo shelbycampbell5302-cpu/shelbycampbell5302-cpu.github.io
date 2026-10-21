@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shelby Campbell | Content and Digital Marketer, Chicago</title>
+<meta name="description" content="Shelby Campbell is a Chicago content and digital marketer with six years in SEO, social, email, paid campaigns, and marketing operations.">
+<meta property="og:title" content="Shelby Campbell | Content and Digital Marketer">
+<meta property="og:description" content="SEO, social, email, and paid campaigns, kept organized and on schedule.">
+<meta property="og:image" content="images/sakura-skin-goals.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rose:#B77B82; --rose-dark:#9A6168; --ink:#2E2328; --muted:#5E4A52;
+  --bg:#F7EFEF; --tint:#EBD3D6; --card:#FBF6F6; --white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+section{padding:88px 0}
+h1,h2,h3{line-height:1.1;letter-spacing:-0.02em}
+h2{font-size:clamp(2rem,4.5vw,3rem);font-weight:800;margin-bottom:12px}
+.eyebrow{color:var(--rose);font-weight:700;font-size:1rem;margin-bottom:36px}
+.btn{display:inline-block;background:var(--rose);color:var(--white);text-decoration:none;font-weight:700;padding:14px 28px;border-radius:10px;transition:background .2s}
+.btn:hover{background:var(--rose-dark)}
+.btn.ghost{background:transparent;border:2px solid var(--rose);color:var(--rose)}
+.btn.ghost:hover{background:var(--rose);color:var(--white)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(247,239,239,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--tint)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+nav .name{font-weight:800;text-decoration:none}
+nav ul{display:flex;gap:24px;list-style:none}
+nav ul a{text-decoration:none;font-weight:600;font-size:.95rem;color:var(--muted)}
+nav ul a:hover{color:var(--rose)}
+
+/* hero */
+.hero{padding:72px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:start}
+.hero h1{font-size:clamp(3rem,8vw,5.5rem);font-weight:800;margin-bottom:16px}
+.hero .role{color:var(--rose);font-weight:700;font-size:1.25rem;margin-bottom:24px}
+.hero p{font-size:1.15rem;max-width:34ch;margin-bottom:16px}
+.hero .facts{color:var(--muted)}
+.hero .ctas{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
+.panel{background:var(--tint);border-radius:24px;padding:40px}
+.panel h3{color:var(--rose);font-size:1.6rem;font-weight:800;margin-bottom:16px}
+.panel h3:not(:first-child){margin-top:32px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none}
+.tags li{background:var(--card);border-radius:999px;padding:6px 14px;font-size:.92rem;font-weight:500}
+.brands{margin-top:28px}
+.brands span{display:block;color:var(--rose);font-weight:700;font-size:.9rem;margin-bottom:8px}
+.brands p{font-weight:700;display:flex;flex-wrap:wrap;gap:6px 20px}
+
+/* results */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.stat{background:var(--card);border:1px solid var(--tint);border-radius:18px;padding:30px}
+.stat .num{color:var(--rose);font-size:clamp(2.6rem,5vw,3.6rem);font-weight:800;line-height:1}
+.stat .label{font-weight:700;margin:10px 0 6px;font-size:1.05rem}
+.stat .src{color:var(--muted);font-size:.9rem;line-height:1.45}
+
+/* case studies */
+.case{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start}
+.case h2{font-size:clamp(2.4rem,5vw,3.6rem)}
+.meta{color:var(--rose);font-weight:700;margin-bottom:24px}
+.lead{font-size:1.3rem;font-weight:700;margin-bottom:18px}
+ul.list{padding-left:20px}
+ul.list li{margin-bottom:10px}
+ul.list li::marker{color:var(--rose)}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.gallery img{border-radius:14px;aspect-ratio:1;object-fit:cover;box-shadow:0 6px 24px rgba(46,35,40,.08)}
+.sub{margin-top:64px}
+.sub h3{font-size:1.8rem;font-weight:800;margin-bottom:6px}
+.sub .eyebrow{margin-bottom:24px}
+.pages{margin-top:28px}
+.pages h4,.articles h4{font-size:1.1rem;margin-bottom:10px}
+.pages li,.articles li{list-style:none;padding:10px 0;border-bottom:1px solid var(--tint)}
+.callout{background:var(--rose);color:var(--white);border-radius:24px;padding:48px 40px;text-align:left}
+.callout .k{font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.95rem;opacity:.9}
+.callout .big{font-size:clamp(3rem,6vw,4.4rem);font-weight:800;line-height:1.05;margin:14px 0}
+.callout .arrow{font-size:2.4rem;opacity:.8}
+
+/* research */
+.card{background:var(--tint);border-radius:20px;padding:32px}
+.card h3{font-size:1.35rem;font-weight:800;margin-bottom:12px}
+.card p{color:var(--ink)}
+
+/* more work */
+.work{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.work figure{background:var(--card);border:1px solid var(--tint);border-radius:20px;overflow:hidden}
+.work img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top}
+.work figcaption{padding:22px 26px}
+.work figcaption strong{display:block;color:var(--rose);font-size:1.3rem}
+
+/* quote */
+.quote h2{margin-bottom:40px}
+.quote blockquote{font-size:clamp(1.3rem,2.6vw,1.9rem);line-height:1.45;font-weight:500;max-width:60ch;position:relative;padding-top:56px}
+.quote blockquote::before{content:"\201C";position:absolute;top:-24px;left:-6px;font-size:8rem;color:var(--rose);font-weight:800;line-height:1}
+.quote cite{display:block;font-style:normal;margin-top:28px;font-size:1rem;line-height:1.5}
+.quote cite strong{display:block;font-size:1.2rem}
+.quote cite span{color:var(--muted);font-size:1rem}
+
+/* contact */
+.contact{background:var(--rose);color:var(--white);text-align:center}
+.contact h2{color:var(--white)}
+.contact p{font-size:1.2rem;max-width:40ch;margin:0 auto 32px}
+.contact .btn{background:var(--white);color:var(--rose)}
+.contact .btn:hover{background:var(--bg)}
+.contact .btn.ghost{background:transparent;border-color:var(--white);color:var(--white)}
+.contact .btn.ghost:hover{background:var(--white);color:var(--rose)}
+.contact .ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+footer{background:var(--ink);color:#d8c9cd;text-align:center;padding:24px;font-size:.9rem}
+
+.alt{background:var(--white)}
+
+@media (max-width:860px){
+  section{padding:64px 0}
+  .hero .wrap,.case{grid-template-columns:1fr;gap:36px}
+  .grid3{grid-template-columns:1fr 1fr}
+  nav ul{display:none}
+  .panel{padding:28px}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .grid3,.work{grid-template-columns:1fr}
+  .callout{padding:36px 28px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="name" href="#top">Shelby Campbell</a>
+    <ul>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#sakura">Sakura Skin</a></li>
+      <li><a href="#ninjatrader">NinjaTrader</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>Shelby<br>Campbell</h1>
+      <div class="role">Content and Digital Marketer, Chicago</div>
+      <p>I help brands grow through SEO, social, email, and paid campaigns, and I keep the work organized and on schedule.</p>
+      <p class="facts">Six years of experience. CAPM certified. English and Japanese.</p>
+      <div class="ctas">
+        <a class="btn" href="mailto:shelby.campbell5302@gmail.com">Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/shelbycampbell1" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Skills</h3>
+      <ul class="tags">
+        <li>Content Strategy</li><li>Content Creation</li><li>SEO</li><li>Social Media</li><li>Email and CRM</li><li>Paid Social and Search</li><li>Copywriting</li><li>Project Management</li><li>Marketing Operations</li><li>AI Workflows</li>
+      </ul>
+      <h3>MarTech</h3>
+      <ul class="tags">
+        <li>HubSpot</li><li>Braze</li><li>SEMrush</li><li>Google Analytics</li><li>Meta Ads Manager</li><li>Google Ads</li><li>WordPress</li><li>Canva</li><li>Figma</li><li>Adobe Creative Suite</li><li>Jira</li><li>ClickUp</li><li>Monday.com</li><li>Claude</li><li>ChatGPT</li>
+      </ul>
+      <div class="brands">
+        <span>Brands I've worked with</span>
+        <p><b>NinjaTrader</b><b>Sakura Skin</b><b>Curaleaf</b><b>Mather</b><b>Start Early</b></p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="results" class="alt">
+  <div class="wrap">
+    <h2>Results</h2>
+    <p class="eyebrow">What the work moved</p>
+    <div class="grid3">
+      <div class="stat"><div class="num">+400%</div><div class="label">online sales</div><div class="src">Sakura Skin, through a full-funnel SEO program</div></div>
+      <div class="stat"><div class="num">+110%</div><div class="label">organic search</div><div class="src">Sakura Skin, through keyword targeting and on-page optimization</div></div>
+      <div class="stat"><div class="num">#1</div><div class="label">Google ranking for target keywords</div><div class="src">Sakura Skin, through on-page SEO and local SEO copy</div></div>
+      <div class="stat"><div class="num">+60%</div><div class="label">new customer leads</div><div class="src">Sakura Skin, through a full-funnel SEO program</div></div>
+      <div class="stat"><div class="num">+40%</div><div class="label">social engagement</div><div class="src">Sakura Skin, through content planning and community management</div></div>
+      <div class="stat"><div class="num">75%</div><div class="label">less time on content edits with AI</div><div class="src">NinjaTrader, with an AI workflow I built</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="sakura">
+  <div class="wrap">
+    <div class="case">
+      <div>
+        <h2>Sakura Skin Beauty</h2>
+        <p class="meta">Medspa in Fenton and Flint, Michigan. 2019 to present.</p>
+        <ul class="list">
+          <li>Built the brand, the WordPress site, and SeedProd landing pages</li>
+          <li>Ran SEO: keyword strategy, on-page optimization, and local SEO copy</li>
+          <li>Wrote 26 blog articles on Botox, lip filler, and GLP-1 weight loss</li>
+          <li>Planned and designed social content for Instagram, Facebook, and TikTok</li>
+          <li>Ran Meta and Google Ads on a $2K monthly budget</li>
+          <li>Wrote email campaigns and managed influencer partnerships</li>
+        </ul>
+      </div>
+      <div class="gallery">
+        <img src="images/sakura-skin-goals.jpg" alt="Sakura Skin social graphic asking about skincare goals" loading="lazy">
+        <img src="images/sakura-membership.jpg" alt="Sakura Skin Love Yourself membership graphic" loading="lazy">
+        <img src="images/sakura-offers.jpg" alt="Sakura Skin offers graphic" loading="lazy">
+        <img src="images/sakura-newsletter.jpg" alt="Sakura Skin newsletter graphic about assessing skin goals" loading="lazy">
+      </div>
+    </div>
+
+    <div class="sub">
+      <h3>Website results</h3>
+      <p class="eyebrow">sakuraskinbeauty.com, April 2023 to October 2026</p>
+      <div class="grid3">
+        <div class="stat"><div class="num">34,000+</div><div class="label">website visitors</div></div>
+        <div class="stat"><div class="num">63,000+</div><div class="label">pageviews</div></div>
+        <div class="stat"><div class="num">+18%</div><div class="label">pages per visit since 2023</div></div>
+      </div>
+      <div class="pages">
+        <h4>Most-visited pages</h4>
+        <ul>
+          <li>Medical weight loss landing pages I built: 2,000+ visitors</li>
+          <li>GLP-1 nausea relief guide I wrote: 1,300+ visitors</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sub">
+      <h3>Blog writing</h3>
+      <p class="eyebrow">SEO articles I wrote for sakuraskinbeauty.com</p>
+      <div class="grid3">
+        <div class="stat"><div class="num">26</div><div class="label">published articles</div></div>
+        <div class="stat"><div class="num">1,300+</div><div class="label">readers on my top guide</div></div>
+        <div class="stat"><div class="num">3</div><div class="label">topics: Botox, lip filler, GLP-1</div></div>
+      </div>
+      <div class="articles pages">
+        <h4>Selected articles</h4>
+        <ul>
+          <li>How to Relieve Nausea on Tirzepatide: 5 Tips That Actually Help</li>
+          <li>Tirzepatide vs. Semaglutide: Which Is Better for Weight Loss?</li>
+          <li>How Many Units of Botox Do You Need? A Treatment-Area Guide</li>
+          <li>Lip Filler Aftercare: What to Do and Avoid After Your Appointment</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ninjatrader" class="alt">
+  <div class="wrap">
+    <div class="case">
+      <div>
+        <h2>NinjaTrader</h2>
+        <p class="meta">Content Marketing Associate, 2025 to 2026</p>
+        <p class="lead">I ran content for three brands at the same time.</p>
+        <ul class="list">
+          <li>Drafted NinjaTrader's first Wikipedia page and saw it through to publishing</li>
+          <li>Found a gap in trader education and proposed a learning hub, which the company approved</li>
+          <li>Built an AI workflow in ChatGPT and Claude that checks drafts against brand guidelines</li>
+          <li>Turned partner webinars into SEO blog posts and edited vendor content</li>
+          <li>Ran competitive research and monthly reports for the CMO</li>
+          <li>Coordinated writers, designers, SEO, compliance, and vendors</li>
+          <li>Added a 3-day compliance review window to every timeline</li>
+        </ul>
+      </div>
+      <div class="callout">
+        <div class="k">Webinar edits went from</div>
+        <div class="big">2 hours</div>
+        <div class="arrow">&darr;</div>
+        <div class="big">30 minutes</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <h2>Research</h2>
+    <p class="eyebrow">Studies I ran at NinjaTrader, 2025 to 2026</p>
+    <div class="grid3">
+      <div class="card"><h3>Competitive research</h3><p>Monthly research across Reddit, TikTok, Instagram, X, and YouTube, delivered as reports on search trends, content opportunities, and market positioning.</p></div>
+      <div class="card"><h3>Trading psychology</h3><p>A study of how active traders think and what they want to learn, used to find content gaps and plan new topics.</p></div>
+      <div class="card"><h3>International markets</h3><p>Assessed market viability in Germany, Spain, and the UK, then oversaw localized marketing copy for those markets.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="more" class="alt">
+  <div class="wrap">
+    <h2>More work</h2>
+    <p class="eyebrow">Nonprofit and recruiting campaigns</p>
+    <div class="work">
+      <figure>
+        <img src="images/victory-lap-carousel.jpg" alt="Victory Lap carousel slide asking why you should choose a career in sales">
+        <figcaption><strong>Victory Lap</strong>Testimonial video ad and recruiting carousel</figcaption>
+      </figure>
+      <figure>
+        <img src="images/start-early-social.jpg" alt="Start Early social graphic about the Child Tax Credit">
+        <figcaption><strong>Start Early</strong>Social graphics and copy for an early-learning nonprofit</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="wrap">
+    <h2>What people say</h2>
+    <blockquote>
+      She has an absolute fire to do great work and goes above and beyond. She does what she says she will and has great skills across several key disciplines including branding, demand generation, CRM, and creative. She has a great handle on Marketing Tech, knows most of the major apps, and I honestly believe can figure out anything.
+      <cite><strong>Tim Kennedy</strong><span>B2B marketing leader and CMO, Microsoft and MRM//McCann alum. Shelby's mentor.</span></cite>
+    </blockquote>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p>Looking for a content, digital, or marketing operations role in Chicago or remote.</p>
+    <div class="ctas">
+      <a class="btn" href="mailto:shelby.campbell5302@gmail.com">Email me</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/shelbycampbell1" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>&copy; 2026 Shelby Campbell</footer>
+
+</body>
+</html>
